@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 from ucimlrepo import fetch_ucirepo
 
-from src.config import RAW_DATA_DIR, ALL_FEATURES, TARGET_COL
+from src.config import RAW_DATA_DIR, TARGET_COL
 
 from pathlib import Path
 from typing import Union

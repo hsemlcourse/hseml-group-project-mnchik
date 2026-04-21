@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 
-from src.config import TARGET_COL, RANDOM_STATE
+from src.config import RANDOM_STATE
 from src.data.split_data import split_dataset
 from src.models.metrics import compute_classification_metrics, format_metrics
 

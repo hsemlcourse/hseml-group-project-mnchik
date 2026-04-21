@@ -10,7 +10,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import LinearSVC
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
-from src.config import TARGET_COL, RANDOM_STATE
+from src.config import RANDOM_STATE
 from src.data.split_data import split_dataset
 from src.models.metrics import compute_classification_metrics, format_metrics
 
