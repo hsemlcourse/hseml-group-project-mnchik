@@ -34,7 +34,7 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Модели и большие бинарники (если будешь сохранять)
+# Модели и большие бинарники
 models/*.pkl
 models/*.joblib
 
