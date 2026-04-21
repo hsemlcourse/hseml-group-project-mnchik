@@ -42,8 +42,9 @@ models/*.joblib
 data/raw/*.data
 data/raw/*.data.gz
 
-# Не игнорируем важные csv (они нужны для воспроизводимости)
-!data/raw/covertype.csv
-!data/raw/covertype_parsed_bonus.csv
-!data/interim/covertype_clean.csv
-!data/processed/covertype_features.csv
+
+# большие CSV не храним в репозитории
+data/raw/covertype.csv
+data/raw/covertype_parsed_bonus.csv
+data/interim/covertype_clean.csv
+data/processed/covertype_features.csv
