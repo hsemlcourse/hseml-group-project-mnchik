@@ -1,0 +1,19 @@
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "W",   # warnings
+  "I",   # isort (импорт)
+  "B",   # bugbear
+]
+ignore = [
+  "E203",  # пробел перед :
+  "E501",  # длина строки (частично игнорим, если нужно)
+]
+
+[lint.per-file-ignores]
+"notebooks/*" = ["E402", "F401", "F811"]
+"tests/*" = ["S101"]  # assert в тестах

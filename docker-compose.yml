@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  covertype-ml:
+    build: .
+    container_name: covertype-ml
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python -m src.models.modeling
