@@ -1,5 +1,8 @@
+
 import pandas as pd
+
 from src.config import ALL_FEATURES, TARGET_COL
+
 
 def validate_schema(df: pd.DataFrame) -> None:
     expected = set(ALL_FEATURES + [TARGET_COL])

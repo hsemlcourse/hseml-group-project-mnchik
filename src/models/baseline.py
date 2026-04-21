@@ -2,14 +2,13 @@ from pathlib import Path
 from typing import Dict
 
 import pandas as pd
+from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
 
 from src.config import RANDOM_STATE
 from src.data.split_data import split_dataset
 from src.models.metrics import compute_classification_metrics, format_metrics
-
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_INTERIM = PROJECT_ROOT / "data" / "interim"

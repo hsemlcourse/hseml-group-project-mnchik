@@ -1,7 +1,8 @@
-from pathlib import Path
-import zipfile
 import gzip
 import shutil
+import zipfile
+from pathlib import Path
+
 import pandas as pd
 
 PROJECT_ROOT = Path("/Users/mnchk/hseml-group-project-mnchik").resolve()

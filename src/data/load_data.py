@@ -1,12 +1,11 @@
 from pathlib import Path
+from typing import Union
+
 import pandas as pd
 from ucimlrepo import fetch_ucirepo
 
 from src.config import RAW_DATA_DIR, TARGET_COL
 
-from pathlib import Path
-from typing import Union
-import pandas as pd
 
 def load_local_csv(path: Union[str, Path] = RAW_DATA_DIR / "covertype.csv") -> pd.DataFrame:
     return pd.read_csv(path)

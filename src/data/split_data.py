@@ -1,5 +1,8 @@
+
 from sklearn.model_selection import train_test_split
-from src.config import TARGET_COL, RANDOM_STATE
+
+from src.config import RANDOM_STATE, TARGET_COL
+
 
 def split_dataset(df):
     X = df.drop(columns=[TARGET_COL])

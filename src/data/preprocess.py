@@ -1,5 +1,8 @@
+
 import pandas as pd
-from src.config import TARGET_COL, NUM_COLS, WILDERNESS_COLS, SOIL_COLS
+
+from src.config import NUM_COLS, SOIL_COLS, TARGET_COL, WILDERNESS_COLS
+
 
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
